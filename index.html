@@ -1,2 +1,104 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="js/scripts.js"></script>
+    <title>Exercício 5</title>
+</head>
+<body>
+    <br>
+        <p id="p1">Resultado:
+            <p id="resultado">0</p>
+        </p>
+    <br>
+    <p>Valor 1: <input type="text" id="valor1"></p>
+    <p id="p2">Valor 2: <input type="text" id="valor2"></p>
+    <button onclick="calcular()">Calcular</button>
+    <button onclick="limpar()">Limpar</button>
+    <br>
+    <hr>
+        <p id="p1">Resultado:
+            <p id="resultadoMedia">0</p>
+        </p>
+    <br>
+    <p>Nota 1: <input type="text" id="nota1"></p>
+    <p id="p2">Nota 2: <input type="text" id="nota2"></p>
+    <p id="p2">Nota 3: <input type="text" id="nota3"></p>
+    <button onclick="media()">Calcular</button>
+    <button onclick="limparMedia()">Limpar</button>
+    <br>
+    <hr>
+        <p id="p1">Preço com desconto:
+            <p id="resultadoDesconto">0</p>
+        </p>
+    <br>
+    <p>Preço do produto: <input type="text" id="valorDesconto"></p>
+    <button onclick="desconto()">Calcular</button>
+    <button onclick="limparDesconto()">Limpar</button>
+
+    <br>
+    <hr>
+        <p id="p1">Preço com desconto:
+            <p id="resultadoDesconto2">0</p>
+        </p>
+    <br>
+    <p>Preço do produto: <input type="text" id="valorDesconto2"></p>
+    <br>
+    <p>Percentual de desconto: <input placeholder="Somente números inteiros..." type="text" id="percentual"></p>
+    <button onclick="desconto2()">Calcular</button>
+    <button onclick="limparDesconto2()">Limpar</button>
+    <br>
+    <hr>
+    <p>A: <input type="text" id="a"></p>
+    <p id="p2">B: <input type="text" id="b"></p>
+    <button onclick="trocarValores()">Inverter valores</button>
+    <br>
+    <hr>
+    <p>Total parcelas: <input type="text" id="totalParcelas"></p>
+    <p id="p2">Quantidade pagas: <input type="text" id="quantidade"></p>
+    <p id="p2">Valor parcela: <input type="text" id="valorParcela"></p>
+    <br>
+    <p id="p1">Saldo devedor: R$
+        <p id="resultadoSaldo">0</p>
+    </p>
+    <br>
+<p id="p1">Parcelas restantes:
+    <p id="resultadoParcelas">0</p>
+</p>
+<button onclick="parcelas()">Calcular</button>
+    <button onclick="limparParcelas()">Limpar</button>
+    <br><hr><br>
+    <table>
+        <tr id="tr">
+            <td style="font-weight: bold; text-align: center;">Sabor </td>
+            <td style="font-weight: bold; text-align: center;">Preço R$</td>
+            <td style="font-weight: bold; text-align: center;">Quant.vendas</td>
+            <td style="font-weight: bold; text-align: center;">Total parcial</td>
+        </tr>
+        <tr>
+            <td>Frutas </td>
+            <td><input id="tabela" type="text" disabled="disabled" placeholder="2,50"></td>
+            <td><input id="lista1" type="number" onclick="lista()" min="1" value="1"></td>
+            <td><input id="tabela1" type="text" disabled="disabled" value="2.5"></td>
+        </tr>
+        <tr>
+            <td>Cremosos</td>
+            <td><input id="tabela" type="text" disabled="disabled" placeholder="3,50"></td>
+            <td><input id="lista2" type="number" onclick="lista()" min="1" value="1"></td>
+            <td><input id="tabela2" type="text" disabled="disabled" value="3.5"></td>
+        </tr>
+        <tr>
+            <td>Recheados </td>
+            <td><input id="tabela" type="text" disabled="disabled" placeholder="4,50"></td>
+            <td><input id="lista3" type="number" onclick="lista() " min="1" value="1"></td>
+            <td><input id="tabela3" type="text" disabled="disabled" value="4.5"></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: end; font-size: 20px; font-weight: bold; padding-right: 5px;">Total de vendas</td>
+            <td><input id="tabela4" type="text" disabled="disabled"></td>
+        </tr>
+    </table>
+</body>
 </html>
